@@ -88,7 +88,8 @@
 
       
       
-     <!-- Nav Item - Utilities Collapse Menu -->
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" 
            data-target="#collapseUtilities2" aria-expanded="true" aria-controls="collapseUtilities">
@@ -184,8 +185,80 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Pessoas</h1>
+            <h1 class="h3 mb-0 text-gray-800">Configurações</h1>
            </div>
+
+  <div class="container">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+      <div class="col-xl-6 col-lg-6 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0 container">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+
+              <div class="col-lg-12">
+                <div class="p-5">
+                 
+                  <form class="user">
+                     <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label text-gray-900" for="customCheck1">Reconhecimento Facial</label>
+                      </div>
+                    </div> 
+                      
+                      <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label text-gray-900" for="customCheck2">Detecção de Máscara</label>
+                      </div>
+                    </div> 
+                      
+                        <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label text-gray-900" for="customCheck3">Leitura Térmica</label>
+                      </div>
+                    </div> 
+                   
+                  
+                         <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label text-gray-900" for="customCheck4">Imagem Térmica</label>
+                      </div>
+                    </div> 
+                     
+                      
+                      
+                      
+                         <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                          <label class=" text-gray-900 " for="customRange2">Emissividade</label>
+<input  onchange="updateTextInput(this.value);" type="range" class="custom-range" min="0" max="100" id="customRange2">
+<input type="text" class="text-center" id="textInput" value="50%">
+                      </div>
+                    </div> 
+                      
+                      
+                  </form>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 
       
         </div>
@@ -193,7 +266,13 @@
 
       </div>
       <!-- End of Main Content -->
-
+      <script>
+          
+          function updateTextInput(val) {
+          document.getElementById('textInput').value=val+'%'; 
+        }
+          
+      </script>
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
